@@ -1,0 +1,21 @@
+{
+  "language": {
+    "en": "English",
+    "es": "Spanish"
+  },
+  "app": {
+    "title": "Gif App",
+    "description": "Discover the best gif search engine!",
+    "search": "Search gif",
+    "placeholder": "Search...",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "error": "An error occurred",
+    "previousSearches": "Recent searches"
+  },
+  "buttons": {
+    "search": "Search",
+    "clear": "Clear",
+    "language": "Change language"
+  }
+}

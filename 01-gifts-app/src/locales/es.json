@@ -1,0 +1,21 @@
+{
+  "language": {
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "app": {
+    "title": "Aplicación de Gifs",
+    "description": "¡Descubre el mejor buscador de gifs!",
+    "search": "Buscar gif",
+    "placeholder": "Buscar...",
+    "loading": "Cargando...",
+    "noResults": "No se encontraron resultados",
+    "error": "Ocurrió un error",
+    "previousSearches": "Búsquedas recientes"
+  },
+  "buttons": {
+    "search": "Buscar",
+    "clear": "Limpiar",
+    "language": "Cambiar idioma"
+  }
+}
