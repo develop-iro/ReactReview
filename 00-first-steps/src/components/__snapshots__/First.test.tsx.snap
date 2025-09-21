@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`First Component > should match snapshot 1`] = `
+<div>
+  <h1>
+    My First Component
+  </h1>
+  <p>
+    This is a simple component.
+  </p>
+  <div>
+    Mocked Counter
+  </div>
+  <div>
+    Mocked Counter
+  </div>
+  <div>
+    Mocked Counter
+  </div>
+</div>
+`;

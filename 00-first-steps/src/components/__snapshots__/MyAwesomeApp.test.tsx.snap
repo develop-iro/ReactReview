@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyAwesomeApp  > [Advanced] should match snapshot 1`] = `
+<div>
+  <h1>
+    My Awesome App
+  </h1>
+  <p>
+    Iro Developer
+  </p>
+  <ul>
+    <li>
+      HTML
+    </li>
+    <li>
+      CSS
+    </li>
+    <li>
+      JavaScript
+    </li>
+    <li>
+      TypeScript
+    </li>
+    <li>
+      React
+    </li>
+    <li>
+      Node.js
+    </li>
+  </ul>
+  <p
+    style="font-weight: bold;"
+  >
+    Fluffy
+     is a 
+    3
+    -year-old
+     
+    Cat
+    .
+  </p>
+</div>
+`;
