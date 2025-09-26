@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useUserCounter } from "../hooks/userCounter";
 import type { CSSProperties } from "react";
 
 // Create a simple item counter component in React.
@@ -56,15 +56,9 @@ interface ItemCounterPropsTS {
 }
 
 const ItemCounter = (props: ItemCounterProps) => {
-  const [count, setCount] = useState(props.initialCount);
-
-  const increment = () => {
-    setCount(count + 1);
-  };
-
-  const decrement = () => {
-    setCount(count > 0 ? count - 1 : 0);
-  };
+  const { count, increment, decrement, reset } = useUserCounter(
+    props.initialCount
+  );
 
   return (
     <div>
@@ -76,6 +70,9 @@ const ItemCounter = (props: ItemCounterProps) => {
       </button>
       <button style={styles.button} onClick={increment}>
         Increment
+      </button>
+      <button style={styles.button} onClick={reset}>
+        Reset
       </button>
     </div>
   );

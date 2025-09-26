@@ -1,69 +1,107 @@
-# React + TypeScript + Vite
+# GifsApp - React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A GIF search application built with React, TypeScript, and Vite, featuring multilanguage support.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 Real-time GIF search
+- 🌐 Multilanguage support (EN/ES)
+- 📱 Responsive design
+- 🎨 Modern and user-friendly interface
+- 🏷️ Recent searches history
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 18
+- TypeScript
+- Vite
+- i18next for internationalization
+- Giphy API
+- CSS Modules
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/           # Componentes React
+│   ├── GifGrid.tsx      # Cuadrícula de GIFs
+│   ├── Header.tsx       # Encabezado
+│   ├── LanguageSwitcher # Selector de idioma
+│   ├── PreviousSearches # Búsquedas previas
+│   └── SearchInput.tsx  # Input de búsqueda
+├── data/
+│   ├── api/             # Configuración de API
+│   ├── interfaces/      # Interfaces TypeScript
+│   └── resources/       # Recursos y acciones
+├── locales/             # Archivos de traducción
+│   ├── en.json
+│   └── es.json
+├── types/               # Tipos TypeScript
+└── utils/              # Utilidades y helpers
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Inicio Rápido
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clona el repositorio:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/your-username/gifs-app.git
 ```
+
+2. Instala las dependencias:
+
+```bash
+pnpm install
+```
+
+3. Crea un archivo `.env` basado en `.env.template`:
+
+```bash
+cp .env.template .env
+```
+
+4. Agrega tu API key de Giphy al `.env`:
+
+```
+VITE_GIPHY_API_KEY=tu_api_key_aquí
+```
+
+5. Inicia el servidor de desarrollo:
+
+```bash
+pnpm dev
+```
+
+## 🔧 Scripts Disponibles
+
+- `pnpm dev`: Inicia el servidor de desarrollo
+- `pnpm build`: Construye la aplicación para producción
+- `pnpm lint`: Ejecuta el linter
+- `pnpm preview`: Vista previa de la build de producción
+
+## 🌐 Internacionalización
+
+La aplicación soporta múltiples idiomas usando i18next:
+
+- 🇪🇸 Español (por defecto)
+- 🇺🇸 Inglés
+
+Los archivos de traducción se encuentran en `src/locales/`.
+
+## 🤝 Contribuir
+
+1. Haz fork del proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Haz commit de tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+## 📜 Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
+
+## 👏 Agradecimientos
+
+- [Giphy API](https://developers.giphy.com/) por proporcionar el servicio de GIFs
+- [React](https://reactjs.org/) y [TypeScript](https://www.typescriptlang.org/) por las herramientas increíbles
+- [Vite](https://vitejs.dev/) por el excelente bundler
