@@ -1,4 +1,4 @@
 [build]
   base = "01-gifs-app"
-  publish = "01-gifs-app/dist"
+  publish = "dist"
   command = "pnpm install && pnpm build"
