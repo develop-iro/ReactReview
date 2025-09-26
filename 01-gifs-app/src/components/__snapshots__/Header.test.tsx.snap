@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component Header > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="content-center"
+  >
+    <h1>
+      Test Title
+    </h1>
+    <p>
+      Test Description
+    </p>
+  </div>
+</DocumentFragment>
+`;
