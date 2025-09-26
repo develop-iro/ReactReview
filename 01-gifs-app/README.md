@@ -23,85 +23,85 @@ A GIF search application built with React, TypeScript, and Vite, featuring multi
 
 ```
 src/
-├── components/           # Componentes React
-│   ├── GifGrid.tsx      # Cuadrícula de GIFs
-│   ├── Header.tsx       # Encabezado
-│   ├── LanguageSwitcher # Selector de idioma
-│   ├── PreviousSearches # Búsquedas previas
-│   └── SearchInput.tsx  # Input de búsqueda
+├── components/           # React Components
+│   ├── GifGrid.tsx      # GIFs grid
+│   ├── Header.tsx       # Header
+│   ├── LanguageSwitcher # Language selector
+│   ├── PreviousSearches # Recent searches
+│   └── SearchInput.tsx  # Search input
 ├── data/
-│   ├── api/             # Configuración de API
-│   ├── interfaces/      # Interfaces TypeScript
-│   └── resources/       # Recursos y acciones
-├── locales/             # Archivos de traducción
+│   ├── api/             # API configuration
+│   ├── interfaces/      # TypeScript interfaces
+│   └── resources/       # Resources and actions
+├── locales/             # Translation files
 │   ├── en.json
 │   └── es.json
-├── types/               # Tipos TypeScript
-└── utils/              # Utilidades y helpers
+├── types/               # TypeScript types
+└── utils/              # Utilities and helpers
 ```
 
-## 🚀 Inicio Rápido
+## 🚀 Quick Start
 
-1. Clona el repositorio:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/your-username/gifs-app.git
 ```
 
-2. Instala las dependencias:
+2. Install dependencies:
 
 ```bash
 pnpm install
 ```
 
-3. Crea un archivo `.env` basado en `.env.template`:
+3. Create a `.env` file from `.env.template`:
 
 ```bash
 cp .env.template .env
 ```
 
-4. Agrega tu API key de Giphy al `.env`:
+4. Add your Giphy API key to `.env`:
 
 ```
-VITE_GIPHY_API_KEY=tu_api_key_aquí
+VITE_GIPHY_API_KEY=your_api_key_here
 ```
 
-5. Inicia el servidor de desarrollo:
+5. Start the development server:
 
 ```bash
 pnpm dev
 ```
 
-## 🔧 Scripts Disponibles
+## 🔧 Available Scripts
 
-- `pnpm dev`: Inicia el servidor de desarrollo
-- `pnpm build`: Construye la aplicación para producción
-- `pnpm lint`: Ejecuta el linter
-- `pnpm preview`: Vista previa de la build de producción
+- `pnpm dev`: Start development server
+- `pnpm build`: Build for production
+- `pnpm lint`: Run linter
+- `pnpm preview`: Preview production build
 
-## 🌐 Internacionalización
+## 🌐 Internationalization
 
-La aplicación soporta múltiples idiomas usando i18next:
+The app supports multiple languages using i18next:
 
-- 🇪🇸 Español (por defecto)
-- 🇺🇸 Inglés
+- 🇺🇸 English
+- 🇪🇸 Spanish (default)
 
-Los archivos de traducción se encuentran en `src/locales/`.
+Translation files are located in `src/locales/`.
 
-## 🤝 Contribuir
+## 🤝 Contributing
 
-1. Haz fork del proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Haz commit de tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+1. Fork the project
+2. Create a branch for your feature (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📜 Licencia
+## 📜 License
 
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-## 👏 Agradecimientos
+## 👏 Acknowledgments
 
-- [Giphy API](https://developers.giphy.com/) por proporcionar el servicio de GIFs
-- [React](https://reactjs.org/) y [TypeScript](https://www.typescriptlang.org/) por las herramientas increíbles
-- [Vite](https://vitejs.dev/) por el excelente bundler
+- [Giphy API](https://developers.giphy.com/) for providing the GIF service
+- [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/) for the amazing tools
+- [Vite](https://vitejs.dev/) for the excellent bundler
