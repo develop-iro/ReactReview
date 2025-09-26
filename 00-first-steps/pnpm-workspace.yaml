@@ -1,0 +1,6 @@
+packages:
+  - "00-first-steps"
+minimumReleaseAge: 1440
+# minimumReleaseAgeExclude:
+#   - 'package-a'
+#   - 'package-b'

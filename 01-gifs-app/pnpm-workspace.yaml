@@ -1,0 +1,6 @@
+packages:
+  - "01-gifs-app"
+minimumReleaseAge: 1440
+# minimumReleaseAgeExclude:
+#   - 'package-a'
+#   - 'package-b'
