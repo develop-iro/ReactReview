@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SearchInput > should render correctly 1`] = `
+<div>
+  <div
+    class="search-container content-center"
+  >
+    <input
+      placeholder=""
+      type="text"
+      value=""
+    />
+    <button />
+  </div>
+</div>
+`;
