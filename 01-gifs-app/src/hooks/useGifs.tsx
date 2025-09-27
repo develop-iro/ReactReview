@@ -26,8 +26,9 @@ export function useGifs() {
 
     const gifs = await getGif(
       formattedValue,
-      document.documentElement.lang || "en"
+      document?.documentElement?.lang || "en"
     );
+
     setGifResponse(gifs);
     gifCache.current[value] = gifs;
   };

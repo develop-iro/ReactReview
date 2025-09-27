@@ -1,0 +1,57 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GifsApp > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="content-center"
+  >
+    <h1>
+      app.title
+    </h1>
+    <p>
+      app.description
+    </p>
+  </div>
+  <div
+    class="content-center"
+    style="display: flex; flex-direction: row; justify-content: center; align-items: center;"
+  >
+    <button
+      style="margin: 0px 8px; padding: 8px 16px; border-radius: 6px; background-color: rgb(25, 118, 210); color: white; font-size: 16px; cursor: pointer; transition: background 0.2s;"
+    >
+      English
+    </button>
+    <button
+      style="margin: 0px 8px; padding: 8px 16px; border-radius: 6px; background-color: rgb(25, 118, 210); color: white; font-size: 16px; cursor: pointer; transition: background 0.2s;"
+    >
+      Español
+    </button>
+  </div>
+  <div
+    class="search-container content-center"
+  >
+    <input
+      aria-label="app.search"
+      placeholder="app.placeholder"
+      type="text"
+      value=""
+    />
+    <button>
+      app.search
+    </button>
+  </div>
+  <div
+    class="previous-searches"
+  >
+    <h2>
+      app.previousSearches
+    </h2>
+    <ul
+      class="previous-searches-list"
+    />
+  </div>
+  <div
+    class="gifs-container"
+  />
+</DocumentFragment>
+`;

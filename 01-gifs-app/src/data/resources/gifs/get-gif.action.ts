@@ -3,6 +3,8 @@ import type { GifsResponse, Gif } from "../../interfaces";
 
 export const getGif = async (query: string, lang: string): Promise<Gif[]> => {
   try {
+    if (query.trim().length === 0) return [];
+
     const response = await giphyApi<GifsResponse>(`search`, {
       params: {
         q: query,
@@ -21,6 +23,6 @@ export const getGif = async (query: string, lang: string): Promise<Gif[]> => {
     }));
   } catch (error) {
     console.error("Error fetching GIFs:", error);
-    throw error;
+    return [];
   }
 };
